@@ -265,7 +265,7 @@ def _setAttr(cls, obj, attr, value):
         assert not hasattr(obj, attr), "can't replace vanilla attribute"
         view = obj._getContentView()
         frame = view.frame()
-        value._setFrame(frame)
+        value._setFrame(frame)        
         view.addSubview_(value._nsObject)
     #elif isinstance(value, NSView) and not attr.startswith("_"):
     #    assert not hasattr(obj, attr), "can't replace vanilla attribute"
