@@ -98,7 +98,7 @@ class VanillaSplitViewDelegate(NSObject):
         # and adjust things willy-nilly to make everything flush in the view.
         # So, we need to loop through the views and try to flush them out
         # before NSSplitView clumsily resizes everything.
-        # 
+        #
         # This doesn't catch all edge cases, but we'll let NSView handle those.
         # Plus, at that point, it's the responsibility of the entity that set the
         # pane sizes to make sure that they aren't doing anything crazy.
